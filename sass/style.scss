@@ -1,2 +1,88 @@
 @import "compass/reset";
 @import "compass/css3";
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #111;
+}
+
+a{
+  text-decoration: none;
+}
+
+//h1, h2, h3, h4, h5, h6 {
+//  margin: 0;
+//  padding: 0;
+//  font-size: 30px;
+//  font-weight: 100;
+//  line-height: 1;
+//  font-family: signal-regular,sans-serif;
+//  text-transform: uppercase;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+
+h1{
+  font-size: 56px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 260px 0;
+  padding: 30px;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.80);
+}
+
+.bkgnd{
+  background: url("../images/bkgnd.jpg");
+  background-position-y: -30px;
+  background-size: cover;
+  height: 1370px;
+  max-width: 934px;
+  margin: 0 auto;
+}
+
+header{
+  line-height: 64px;
+  margin: 0 auto;
+  //background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 0 26px;
+  .logo{
+    //display: block;
+    float: left;
+    margin: 17px 0 0;
+    width: 162px;
+    height: 30px;
+    background: url("../images/logo.png") left top no-repeat;
+  }
+  nav{
+    display: inline-block;
+    ul{
+      li{
+        display: inline-block;
+        a{
+          padding: 0 20px;
+          color: #352c2e;
+          font-size: 21px;
+          font-weight: lighter;
+          font-family: myfont,sans-serif;
+          //line-height: 64px;
+          text-transform: uppercase;
+          //text-decoration: none;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url("fonts/signal-no3-d-webfont.woff") format('woff');
+}

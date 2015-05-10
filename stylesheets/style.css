@@ -1,0 +1,142 @@
+/* line 5, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/style.scss */
+body {
+  background-color: #111;
+}
+
+/* line 14, ../sass/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 30, ../sass/style.scss */
+h1 {
+  font-size: 56px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 260px 0;
+  padding: 30px;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 40, ../sass/style.scss */
+.bkgnd {
+  background: url("../images/bkgnd.jpg");
+  background-position-y: -30px;
+  background-size: cover;
+  height: 1370px;
+  max-width: 934px;
+  margin: 0 auto;
+}
+
+/* line 49, ../sass/style.scss */
+header {
+  line-height: 64px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0 26px;
+}
+/* line 56, ../sass/style.scss */
+header .logo {
+  float: left;
+  margin: 17px 0 0;
+  width: 162px;
+  height: 30px;
+  background: url("../images/logo.png") left top no-repeat;
+}
+/* line 64, ../sass/style.scss */
+header nav {
+  display: inline-block;
+}
+/* line 67, ../sass/style.scss */
+header nav ul li {
+  display: inline-block;
+}
+/* line 69, ../sass/style.scss */
+header nav ul li a {
+  padding: 0 20px;
+  color: #352c2e;
+  font-size: 21px;
+  font-weight: lighter;
+  font-family: myfont,sans-serif;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url("fonts/signal-no3-d-webfont.woff") format("woff");
+}
