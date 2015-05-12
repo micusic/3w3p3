@@ -28,12 +28,15 @@ a{
 //}
 
 h1{
-  font-size: 56px;
+  top: 260px;
+  position: absolute;
+  width: 100%;
+  font-size: 50px;
   text-align: center;
-  font-weight: bolder;
-  margin: 230px 0;
-  padding: 30px;
+  font-weight: lighter;
+  padding: 30px 0;
   color: whitesmoke;
+  font-family: linkin-font, sans-serif;
   background-color: rgba(0, 0, 0, 0.80);
 }
 
@@ -44,17 +47,19 @@ h1{
   height: 1370px;
   max-width: 934px;
   margin: 0 auto;
+  position: relative;
 }
 
 header{
   line-height: 64px;
   margin: 0 auto;
-  //background-color: rgba(0, 0, 0, 0.5);
   background: rgba(255,255,255,.8);
   text-align: center;
   padding: 0 26px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
   .logo{
-    //display: block;
     float: left;
     margin: 17px 0 0;
     width: 162px;
@@ -71,7 +76,7 @@ header{
           color: #352c2e;
           font-size: 21px;
           font-weight: lighter;
-          font-family: myfont,sans-serif;
+          font-family: linkin-font,sans-serif;
           //line-height: 64px;
           text-transform: uppercase;
           //text-decoration: none;
@@ -82,7 +87,94 @@ header{
   }
 }
 
+footer{
+  line-height: 64px;
+  background: rgba(255,255,255,.9);
+  color: #111111;
+  padding: 0 26px;
+  margin: 0 auto;
+  .mark{
+    margin: 3px 0 0;
+    float: left;
+    width: 44px;
+    height: 57px;
+    background: url("../images/mark.png") left top no-repeat;
+  }
+  ul{
+    float: right;
+    li{
+      display: inline-block;
+      a{
+        span{
+          margin: 3px 0 0;
+          padding: 0 20px;
+          color: #352c2e;
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
 @font-face {
-  font-family: "myfont";
+  font-family: "linkin-font";
   src: url("fonts/signal-no3-d-webfont.woff") format('woff');
 }
+
+
+.clearfix {
+  &:after,
+  &:before{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+//icon moon
+@font-face {
+  font-family: 'SocialIcon';
+  src:url('fonts/SocialIcon.eot?hq0q6a');
+  src:url('fonts/SocialIcon.eot?#iefixhq0q6a') format('embedded-opentype'),
+  url('fonts/SocialIcon.woff?hq0q6a') format('woff'),
+  url('fonts/SocialIcon.ttf?hq0q6a') format('truetype'),
+  url('fonts/SocialIcon.svg?hq0q6a#SocialIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'SocialIcon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus:before {
+  content: "\ea88";
+}
+
+.icon-facebook:before {
+  content: "\ea8c";
+}
+
+.icon-twitter:before {
+  content: "\ea91";
+}
+
+.icon-picassa:before {
+  content: "\eaa4";
+}
+
+.icon-pinterest:before {
+  content: "\ead0";
+}
+

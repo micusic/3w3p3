@@ -1,4 +1,4 @@
-/* line 5, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, D:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p374@casa-cloud/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -82,16 +82,19 @@ a {
 
 /* line 30, ../sass/style.scss */
 h1 {
-  font-size: 56px;
+  top: 260px;
+  position: absolute;
+  width: 100%;
+  font-size: 50px;
   text-align: center;
-  font-weight: bolder;
-  margin: 230px 0;
-  padding: 30px;
+  font-weight: lighter;
+  padding: 30px 0;
   color: whitesmoke;
+  font-family: linkin-font, sans-serif;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 40, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .bkgnd {
   background: url("../images/bkgnd.jpg");
   background-position-y: -30px;
@@ -99,17 +102,21 @@ h1 {
   height: 1370px;
   max-width: 934px;
   margin: 0 auto;
+  position: relative;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 header {
   line-height: 64px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 0 26px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
-/* line 56, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 header .logo {
   float: left;
   margin: 17px 0 0;
@@ -117,26 +124,110 @@ header .logo {
   height: 30px;
   background: url("../images/logo.png") left top no-repeat;
 }
-/* line 64, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 header nav {
   display: inline-block;
 }
-/* line 67, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 header nav ul li {
   display: inline-block;
 }
-/* line 69, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 header nav ul li a {
   padding: 0 20px;
   color: #352c2e;
   font-size: 21px;
   font-weight: lighter;
-  font-family: myfont,sans-serif;
+  font-family: linkin-font,sans-serif;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 90, ../sass/style.scss */
+footer {
+  line-height: 64px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111111;
+  padding: 0 26px;
+  margin: 0 auto;
+}
+/* line 96, ../sass/style.scss */
+footer .mark {
+  margin: 3px 0 0;
+  float: left;
+  width: 44px;
+  height: 57px;
+  background: url("../images/mark.png") left top no-repeat;
+}
+/* line 103, ../sass/style.scss */
+footer ul {
+  float: right;
+}
+/* line 105, ../sass/style.scss */
+footer ul li {
+  display: inline-block;
+}
+/* line 108, ../sass/style.scss */
+footer ul li a span {
+  margin: 3px 0 0;
+  padding: 0 20px;
+  color: #352c2e;
+  font-size: 21px;
+}
+
 @font-face {
-  font-family: "myfont";
+  font-family: "linkin-font";
   src: url("fonts/signal-no3-d-webfont.woff") format("woff");
+}
+/* line 126, ../sass/style.scss */
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: 'SocialIcon';
+  src: url("fonts/SocialIcon.eot?hq0q6a");
+  src: url("fonts/SocialIcon.eot?#iefixhq0q6a") format("embedded-opentype"), url("fonts/SocialIcon.woff?hq0q6a") format("woff"), url("fonts/SocialIcon.ttf?hq0q6a") format("truetype"), url("fonts/SocialIcon.svg?hq0q6a#SocialIcon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 147, ../sass/style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'SocialIcon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 161, ../sass/style.scss */
+.icon-google-plus:before {
+  content: "\ea88";
+}
+
+/* line 165, ../sass/style.scss */
+.icon-facebook:before {
+  content: "\ea8c";
+}
+
+/* line 169, ../sass/style.scss */
+.icon-twitter:before {
+  content: "\ea91";
+}
+
+/* line 173, ../sass/style.scss */
+.icon-picassa:before {
+  content: "\eaa4";
+}
+
+/* line 177, ../sass/style.scss */
+.icon-pinterest:before {
+  content: "\ead0";
 }
