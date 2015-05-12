@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>3W3P3</title>
 	<link type="text/css" rel="stylesheet" href="stylesheets/style.css" media="all">
+    <link type="text/css" rel="stylesheet" href="stylesheets/jquery-jvectormap-2.0.2.css" media="screen"/>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="javascript/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="javascript/jquery-jvectormap-cn-merc-en.js"></script>
 </head>
 <body>
     <header>
@@ -21,7 +25,18 @@
 	<section class="bkgnd">
 		<h1>THE HUNTING PARTY: LINKIN PARK</h1>
 	</section>
-    <section></section>
+    <section class="map">
+        <div id="world-map" style="width: 600px; height: 400px"></div>
+        <script>
+            $(function(){
+                $('#world-map').vectorMap({
+                    map: 'cn_merc_en',
+                    backgroundColor: '#111',
+                    zoomOnScroll: false
+                });
+            });
+        </script>
+    </section>
     <footer class="clearfix">
         <a class="mark" href="#"></a>
         <ul>
