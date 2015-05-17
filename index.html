@@ -46,7 +46,14 @@
                     $('#world-map').vectorMap({
                         map: 'cn_merc_en',
                         backgroundColor: '#111',
-                        zoomOnScroll: false
+                        zoomOnScroll: false,
+                        regionStyle: {
+                            selected: {
+                                fill: 'red'
+                            }
+                        },
+                        regionsSelectable: true,
+                        selectedRegions: ['CN-11','CN-31','CN-32','CN-50','CN-44']
                     });
                 });
             </script>
