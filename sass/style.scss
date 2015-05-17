@@ -9,6 +9,7 @@
 
 body{
   background-color: #111;
+  min-width: 934px;
 }
 
 a{
@@ -16,6 +17,7 @@ a{
 }
 
 header{
+  min-width: 934px;
   line-height: 64px;
   margin: 0 auto;
   background: rgba(224, 224, 224,.8);
@@ -114,39 +116,6 @@ header{
 .albums{
   max-width: 934px;
   margin: 50px auto;
-  ul{
-    li{
-      width: 22.5%;
-      height: 210px;
-      margin: 1.25%;
-      float: left;
-      background-size: cover;
-      &:nth-child(1){
-        background-image: url("../images/hunting.jpg");
-      }
-      &:nth-child(2){
-        background-image: url("../images/living.jpg");
-      }
-      &:nth-child(3){
-        background-image: url("../images/suns.jpg");
-      }
-      &:nth-child(4){
-        background-image: url("../images/revo.jpg");
-      }
-      &:nth-child(5){
-        background-image: url("../images/minutes.jpg");
-      }
-      &:nth-child(6){
-        background-image: url("../images/texas.jpg");
-      }
-      &:nth-child(7){
-        background-image: url("../images/meteora.jpg");
-      }
-      &:nth-child(8){
-        background-image: url("../images/hybrid.jpg");
-      }
-    }
-  }
 }
 
 .avatar{
@@ -159,15 +128,17 @@ header{
   margin: 0 auto;
 }
 
-.banner{
-  max-width: 934px;
-  margin: 0 auto;
-  a{
-    background: url("../images/banner.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 78px;
-    display: inline-block;
+.cities{
+  .banner{
+    max-width: 934px;
+    margin: 0 auto;
+    a{
+      background: url("../images/banner.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 78px;
+      display: inline-block;
+    }
   }
 }
 
@@ -225,6 +196,52 @@ footer{
   }
 }
 
+//direction aware hover effect
+.da-thumbs {
+  list-style: none;
+  width: 934px;
+  height: 470px;
+  position: relative;
+  margin: 0px auto;
+  padding: 27px;
+}
+.da-thumbs li {
+  float: left;
+  margin: 5px;
+  position: relative;
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+  display: block;
+  position: relative;
+}
+
+.da-thumbs li a img{
+  height: 210px;
+  width: 210px;
+}
+
+.da-thumbs li a {
+  overflow: hidden;
+}
+.da-thumbs li a div {
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+}
+.da-thumbs li a div span {
+  display: block;
+  padding: 10px 0;
+  margin: 40px 20px 20px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: linkin-font, sans-serif;
+  font-weight: normal;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
 
 //icon moon
 @font-face {

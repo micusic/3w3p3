@@ -5,9 +5,6 @@
 	<title>3W3P3</title>
 	<link type="text/css" rel="stylesheet" href="stylesheets/style.css" media="all">
     <link type="text/css" rel="stylesheet" href="stylesheets/jquery-jvectormap-2.0.2.css" media="screen"/>
-    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="javascript/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="javascript/jquery-jvectormap-cn-merc-en.js"></script>
 </head>
 <body>
     <header>
@@ -41,38 +38,59 @@
     <section class="cities">
         <div class="banner"><a href="#"></a></div>
         <div class="map">
-            <div id="world-map" style="width: 600px; height: 400px"></div>
-            <script>
-                $(function(){
-                    $('#world-map').vectorMap({
-                        map: 'cn_merc_en',
-                        backgroundColor: '#111',
-                        zoomOnScroll: false,
-                        regionStyle: {
-                            initial: {
-                            fill: 'grey'
-                        },
-                            selected: {
-                                fill: 'white'
-                            }
-                        },
-                        regionsSelectable: true,
-                        selectedRegions: ['CN-11','CN-31','CN-32','CN-50','CN-44']
-                    });
-                });
-            </script>
+            <div id="china-map" style="width: 600px; height: 400px"></div>
         </div>
     </section>
     <section class="albums clearfix">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul id="da-thumbs" class="da-thumbs">
+            <li>
+                <a href="">
+                    <img src="images/hunting.jpg"/>
+                    <div><span>THE HUNTING PARTY</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/living.jpg"/>
+                    <div><span>LIVING THINGS</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/suns.jpg"/>
+                    <div><span>A THOUSAND SUNS</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/revo.jpg"/>
+                    <div><span>ROAD TO REVOLUTION</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/minutes.jpg"/>
+                    <div><span>MINUTES TO MIDNIGHT</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/texas.jpg"/>
+                    <div><span>LIVE IN TEXAS</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/meteora.jpg"/>
+                    <div><span>METEORA</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/hybrid.jpg"/>
+                    <div><span>HYBRID THEORY</span></div>
+                </a>
+            </li>
         </ul>
     </section>
     <footer class="clearfix">
@@ -86,4 +104,33 @@
         </ul>
     </footer>
 </body>
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="javascript/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="javascript/jquery-jvectormap-cn-merc-en.js"></script>
+<script>
+    $(function(){
+        $('#china-map').vectorMap({
+            map: 'cn_merc_en',
+            backgroundColor: '#111',
+            zoomOnScroll: false,
+            regionStyle: {
+                initial: {
+                    fill: 'grey'
+                },
+                selected: {
+                    fill: 'white'
+                }
+            },
+            regionsSelectable: true,
+            selectedRegions: ['CN-11','CN-31','CN-32','CN-50','CN-44']
+        });
+    });
+</script>
+<script src="javascript/jquery.hoverdir.js"></script>
+<script src="javascript/modernizr.custom.97074.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+    });
+</script>
 </html>
